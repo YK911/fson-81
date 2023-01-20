@@ -1,4 +1,56 @@
+:root {
+  /* Fonts */
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* Text colors */
+  --primary-txt-cl: #303030;
+  --secondary-txt-cl: #555555;
+  --accent-txt-cl: #ff6c00;
+  --light-txt-cl: #ffffff;
+  --grey-cl: rgb(157, 164, 189);
+  --grey-cl-60: rgba(157, 164, 189, 0.6);
+
+  /* BG colors */
+  --primary-bg-cl: #191c26;
+  --accent-bg-cl: #ff6c00;
+
+  /* Others */
+}
+
 body {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--primary-txt-cl);
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--primary-txt-cl);
+
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-bg-cl);
+}
+
+.btn-theme-dark {
+  color: var(--light-txt-cl);
+}
+
+/* reset styles */
+.link {
+  text-decoration: none;
+  color: currentColor;
 }
 
 /**
@@ -7,6 +59,7 @@ body {
   |============================
 */
 .header {
+  background-color: var(--primary-bg-cl);
 }
 .header-logo {
 }
@@ -18,33 +71,59 @@ body {
 }
 .header-item {
 }
-.header-link {
-}
+.header-link,
 .header-contact {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: var(--light-txt-cl);
 }
-.header-button {
+.header-link:hover,
+.header-link:focus,
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-txt-cl);
 }
-.header-button:hover,
-.header-button:focus {
-}
+
 /**
   |============================
   | Hero styles
   |============================
 */
 .hero {
+  background-color: #191c26;
 }
 .hero-list {
 }
 .hero-item {
 }
 .hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var(--primary-txt-cl);
+}
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-txt-cl);
 }
 .hero-uppertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--grey-cl-60);
 }
 .hero-title {
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: var(--light-txt-cl);
 }
 .hero-desc {
+  color: #9da4bd;
 }
 /* slider */
 .slider-pagination {
