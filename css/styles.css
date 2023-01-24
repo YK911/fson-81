@@ -1,7 +1,7 @@
 :root {
   /* Fonts */
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --primary-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 
   /* Text colors */
   --primary-txt-cl: #303030;
@@ -12,12 +12,17 @@
   --grey-cl-60: rgba(157, 164, 189, 0.6);
 
   /* BG colors */
-  --primary-bg-cl: #191c26;
+  --primary-bg-cl: #111319;
   --accent-bg-cl: #ff6c00;
 
   /* Others */
 }
 
+/**
+  |============================
+  | Base styles
+  |============================
+*/
 body {
   font-family: var(--primary-font);
   font-size: 18px;
@@ -25,7 +30,39 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-txt-cl);
 }
-
+/* reset styles */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.list {
+  list-style: none;
+}
+/* reset end */
+.uppertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+}
+.uppertitle-theme-dark {
+  color: var(--grey-cl-60);
+}
+.title {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+.title-theme-dark {
+  color: var(--light-txt-cl);
+}
+.subtitle {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--secondary-txt-cl);
+}
 .btn {
   font-family: inherit;
   font-weight: 600;
@@ -42,17 +79,9 @@ body {
 .btn:focus {
   background-color: var(--accent-bg-cl);
 }
-
 .btn-theme-dark {
   color: var(--light-txt-cl);
 }
-
-/* reset styles */
-.link {
-  text-decoration: none;
-  color: currentColor;
-}
-
 /**
   |============================
   | Header styles
@@ -92,29 +121,22 @@ body {
   |============================
 */
 .hero {
-  background-color: #191c26;
+  background-color: var(--primary-bg-cl);
 }
-.hero-list {
+.media {
 }
-.hero-item {
+.media-item {
 }
-.hero-link {
+.media-link {
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
   color: var(--primary-txt-cl);
 }
-.hero-link:hover,
-.hero-link:focus {
+.media-link:hover,
+.media-link:focus {
   color: var(--accent-txt-cl);
-}
-.hero-uppertitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: var(--grey-cl-60);
 }
 .hero-title {
   font-size: 72px;
@@ -135,4 +157,162 @@ body {
 .slider-controls-item {
 }
 .slider-controls-btn {
+}
+/**
+  |============================
+  | About styles
+  |============================
+*/
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-img {
+}
+.about-desc {
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  color: var(--secondary-txt-cl);
+}
+/**
+  |============================
+  | Price styles
+  |============================
+*/
+.price {
+  background-color: var(--primary-bg-cl);
+}
+.price-wrapper {
+}
+.price-list {
+}
+.price-item {
+  color: var(--grey-cl);
+}
+.price-line {
+}
+/**
+  |============================
+  | Benefits styles
+  |============================
+*/
+.benefits {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-quentity {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.benefits-decor {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+  color: var(--accent-txt-cl);
+}
+.benefits-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-align: center;
+}
+/**
+  |============================
+  | Team styles
+  |============================
+*/
+.team {
+}
+.team-list {
+}
+.team-item {
+}
+.team-avatar {
+}
+.team-name {
+  text-align: center;
+}
+.team-position {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  color: var(--accent-txt-cl);
+}
+.socials {
+}
+.socials-item {
+}
+.socials-link {
+}
+.socials-icon {
+}
+/**
+  |============================
+  | Gallery styles
+  |============================
+*/
+.gallery {
+}
+.gallery-list {
+}
+.gallery-item {
+}
+.gallery-img {
+}
+/**
+  |============================
+  | Booking styles
+  |============================
+*/
+.booking {
+  background-color: var(--primary-bg-cl);
+}
+/**
+  |============================
+  | Contacts styles
+  |============================
+*/
+.contacts {
+  background-color: var(--primary-bg-cl);
+}
+.contacts-block {
+  font-style: normal;
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-link {
+  color: var(--grey-cl);
+}
+.schedule-uppertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+  color: var(--grey-cl-60);
+}
+.schedule-desc {
+  color: var(--grey-cl);
+}
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer {
+}
+.footer-copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  color: #9da4bd;
 }

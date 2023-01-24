@@ -10,14 +10,14 @@
     />
     <title>BarberShop</title>
     <!-- Fonst -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header section -->
@@ -33,9 +33,9 @@
       </a>
 
       <nav class="header-nav">
-        <ul class="header-list">
+        <ul class="header-list list">
           <li class="header-item">
-            <a class="header-link link current" href="#about" id="link">About</a>
+            <a class="header-link link current" id="link" href="#about">About</a>
           </li>
           <li class="header-item">
             <a class="header-link link" href="#price">Services and prices</a>
@@ -55,41 +55,43 @@
     <main>
       <!-- Hero section -->
       <section class="hero section">
-        <ul class="hero-list">
-          <li class="hero-item">
+        <ul class="media list">
+          <li class="media-item">
             <a
-              class="hero-link link"
+              class="media-link link"
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              >Instagram</a
             >
+              Instagram
+            </a>
           </li>
-          <li class="hero-item">
+          <li class="media-item">
             <a
-              class="hero-link link"
+              class="media-link link"
               href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
-              >Youtube</a
             >
+              Youtube
+            </a>
           </li>
         </ul>
 
-        <p class="hero-uppertitle">A hair salon for men in Kyiv</p>
+        <p class="uppertitle">A hair salon for men in Kyiv</p>
         <h1 class="hero-title">BarberShop</h1>
         <p class="hero-desc">
           We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
         </p>
 
         <!-- slider pagination -->
-        <ul class="slider-pagination" hidden>
+        <ul class="slider-pagination list" hidden>
           <li class="slider-pagination-item"></li>
           <li class="slider-pagination-item"></li>
           <li class="slider-pagination-item"></li>
         </ul>
         <!-- slider controls -->
-        <ul class="slider-controls" hidden>
+        <ul class="slider-controls list" hidden>
           <li class="slider-controls-item">
             <button class="slider-controls-btn" type="button">Back</button>
           </li>
@@ -99,19 +101,21 @@
         </ul>
       </section>
       <!-- About us section -->
-      <section id="about">
-        <ul>
-          <li>
-            <img src="./images/about/img-1.jpg" alt="" width="270" height="445" />
+      <section class="about" id="about">
+        <ul class="about-list list">
+          <li class="about-item">
+            <img class="about-img" src="./images/about/img-1.jpg" alt width="270" height="445" />
           </li>
-          <li>
-            <img src="./images/about/img-2.jpg" alt="" width="270" height="445" />
+          <li class="about-item">
+            <img class="about-img" src="./images/about/img-2.jpg" alt width="270" height="445" />
           </li>
         </ul>
-        <p>About</p>
-        <h2>Best Barbershop in your city</h2>
-        <p>If you want to add more confidence to your image, you should visit us.</p>
-        <p>
+        <p class="uppertitle">About</p>
+        <h2 class="title">Best Barbershop in your city</h2>
+        <p class="subtitle"
+          >If you want to add more confidence to your image, you should visit us.</p
+        >
+        <p class="about-desc">
           We are a team that never stops at what has been achieved and are thirsty for changes. And
           when you fall into the hands of our master, you will never be the same again. We are a
           team that is always "on the same wave" with clients. Therefore, we are always ready to
@@ -120,150 +124,204 @@
         <button class="btn" type="button">ONLINE-BOOKING</button>
       </section>
       <!-- Price section -->
-      <section id="price">
-        <p>Spend your time with the best masters</p>
-        <h2>Services and prices</h2>
-        <div>
-          <ul>
-            <li>Men’s haircut <span></span> from 300 uah.</li>
-            <li>Beard trim <span></span> from 300 uah.</li>
-            <li>Mustache trim <span></span> from 200 uah.</li>
-            <li>Straight razor <span></span> shave from 200 uah.</li>
+      <section class="price" id="price">
+        <p class="uppertitle uppertitle-theme-dark">Spend your time with the best masters</p>
+        <h2 class="title title-theme-dark">Services and prices</h2>
+        <div class="price-wrapper">
+          <ul class="price-list list">
+            <li class="price-item">Men’s haircut <span class="price-line"></span> from 300 uah.</li>
+            <li class="price-item">Beard trim <span class="price-line"></span> from 300 uah.</li>
+            <li class="price-item">Mustache trim <span class="price-line"></span> from 200 uah.</li>
+            <li class="price-item"
+              >Straight razor <span class="price-line"></span> shave from 200 uah.</li
+            >
           </ul>
-          <ul>
-            <li>Trainee’s haircut <span></span> from 50 uah.</li>
-            <li>Haircut under the nozzle <span></span> from 200 uah.</li>
-            <li>Children’s haircut (0-12 y.o.) <span></span> from 300 uah.</li>
-            <li>Camouflage of gray hair <span></span> from 200 uah.</li>
+          <ul class="price-list list">
+            <li class="price-item"
+              >Trainee’s haircut <span class="price-line"></span> from 50 uah.</li
+            >
+            <li class="price-item"
+              >Haircut under the nozzle <span class="price-line"></span> from 200 uah.</li
+            >
+            <li class="price-item"
+              >Children’s haircut (0-12 y.o.) <span class="price-line"></span> from 300 uah.</li
+            >
+            <li class="price-item"
+              >Camouflage of gray hair <span class="price-line"></span> from 200 uah.</li
+            >
           </ul>
         </div>
         <button class="btn btn-theme-dark" type="button">online-booking</button>
       </section>
       <!-- Benefits section -->
-      <section>
-        <ul>
-          <li>
-            <p>600<sup>&#43;</sup></p>
-            <p>Satisfied customers per day</p>
+      <section class="benefits">
+        <ul class="benefits-list list">
+          <li class="benefits-item">
+            <p class="benefits-quentity">600<sup class="benefits-decor">&#43;</sup></p>
+            <p class="benefits-text">Satisfied customers per day</p>
           </li>
-          <li>
-            <p>50<sup>&#43;</sup></p>
-            <p>Awards for excellent service</p>
+          <li class="benefits-item">
+            <p class="benefits-quentity">50<sup class="benefits-decor">&#43;</sup></p>
+            <p class="benefits-text">Awards for excellent service</p>
           </li>
-          <li>
-            <p>20<sup>&#43;</sup></p>
-            <p>Kyiv’s best professional barbers</p>
+          <li class="benefits-item">
+            <p class="benefits-quentity">20<sup class="benefits-decor">&#43;</sup></p>
+            <p class="benefits-text">Kyiv’s best professional barbers</p>
           </li>
-          <li>
-            <p>100<sup>&#43;</sup></p>
-            <p>Gifts for regular customers</p>
+          <li class="benefits-item">
+            <p class="benefits-quentity">100<sup class="benefits-decor">&#43;</sup></p>
+            <p class="benefits-text">Gifts for regular customers</p>
           </li>
         </ul>
-        <p>Old traditional school</p>
-        <h2>Why people come to us?</h2>
-        <p>
+        <p class="uppertitle">Old traditional school</p>
+        <h2 class="title">Why people come to us?</h2>
+        <p class="subtitle">
           Only good things are said about us. But it's better to see and feel 1 time than read 10
           times.
         </p>
       </section>
       <!-- Team section -->
-      <section id="team">
-        <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
-
-        <ul>
-          <li>
+      <section class="team" id="team">
+        <p class="uppertitle">For true enjoyers of the atmosphere</p>
+        <h2 class="title">Our barbers</h2>
+        <ul class="team-list list">
+          <li class="team-item">
             <img
+              class="team-avatar"
               src="./images/team/img-1.jpg"
               alt="John Smith extreme barber"
               width="370"
               height="346"
             />
-            <p>John Smith</p>
-            <p>Extreme Barber</p>
-            <ul>
-              <li>
-                <a href="" aria-label="Instagram link">
-                  <img src="./images/icons/instagram.svg" alt=icon"" width="20" height="20" />
+            <p class="team-name">John Smith</p>
+            <p class="team-position">Extreme Barber</p>
+            <ul class="socials list">
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Instagram link">
+                  <img class="socials-icon" src="./images/icons/instagram.svg" alt="icon" ""
+                  width="20" height="20">
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Twitter link">
-                  <img src="./images/icons/twitter.svg" alt=icon"" width="20" height="20" />
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Twitter link">
+                  <img class="socials-icon" src="./images/icons/twitter.svg" alt="icon" ""
+                  width="20" height="20">
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Facebook link">
-                  <img src="./images/icons/facebook.svg" alt="icon" width="20" height="20" />
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Facebook link">
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/facebook.svg"
+                    alt="icon"
+                    width="20"
+                    height="20"
+                  />
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Linkedin link">
-                  <img src="./images/icons/linkedin.svg" alt="icon" width="20" height="20" />
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Linkedin link">
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/linkedin.svg"
+                    alt="icon"
+                    width="20"
+                    height="20"
+                  />
                 </a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="team-item">
             <img
+              class="team-avatar"
               src="./images/team/img-2.jpg"
               alt="Michele Doe extreme barber"
               width="370"
               height="346"
             />
-            <p>Michele Doe</p>
-            <p>Extreme Barber</p>
-            <ul>
-              <li>
-                <a href="" aria-label="Instagram link">
-                  <img src="./images/icons/instagram.svg" alt=icon"" width="20" height="20" />
+            <p class="team-name">Michele Doe</p>
+            <p class="team-position">Extreme Barber</p>
+            <ul class="socials list">
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Instagram link">
+                  <img class="socials-icon" src="./images/icons/instagram.svg" alt="icon" ""
+                  width="20" height="20">
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Twitter link">
-                  <img src="./images/icons/twitter.svg" alt=icon"" width="20" height="20" />
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Twitter link">
+                  <img class="socials-icon" src="./images/icons/twitter.svg" alt="icon" ""
+                  width="20" height="20">
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Facebook link">
-                  <img src="./images/icons/facebook.svg" alt="icon" width="20" hheight="20" />
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Facebook link">
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/facebook.svg"
+                    alt="icon"
+                    width="20"
+                    hheight="20"
+                  />
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Linkedin link">
-                  <img src="./images/icons/linkedin.svg" alt="icon" width="20" hheight="20" />
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Linkedin link">
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/linkedin.svg"
+                    alt="icon"
+                    width="20"
+                    hheight="20"
+                  />
                 </a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="team-item">
             <img
+              class="team-avatar"
               src="./images/team/img-3.jpg"
               alt="Alan Black extreme barber"
               width="370"
               height="346"
             />
-            <p>Alan Black</p>
-            <p>Extreme Barber</p>
-            <ul>
-              <li>
-                <a href="" aria-label="Instagram link">
-                  <img src="./images/icons/instagram.svg" alt=icon"" width="20" height="20" />
+            <p class="team-name">Alan Black</p>
+            <p class="team-position">Extreme Barber</p>
+            <ul class="socials list">
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Instagram link">
+                  <img class="socials-icon" src="./images/icons/instagram.svg" alt="icon" ""
+                  width="20" height="20">
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Twitter link">
-                  <img src="./images/icons/twitter.svg" alt=icon"" width="20" height="20" />
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Twitter link">
+                  <img class="socials-icon" src="./images/icons/twitter.svg" alt="icon" ""
+                  width="20" height="20">
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Facebook link">
-                  <img src="./images/icons/facebook.svg" alt="icon" width="20" hheight="20" />
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Facebook link">
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/facebook.svg"
+                    alt="icon"
+                    width="20"
+                    hheight="20"
+                  />
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Linkedin link">
-                  <img src="./images/icons/linkedin.svg" alt="icon" width="20" hheight="20" />
+              <li class="socials-item">
+                <a class="socials-link" href aria-label="Linkedin link">
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/linkedin.svg"
+                    alt="icon"
+                    width="20"
+                    hheight="20"
+                  />
                 </a>
               </li>
             </ul>
@@ -271,66 +329,106 @@
         </ul>
       </section>
       <!-- Gallery section -->
-      <section>
-        <p>In Latin, "barba" means "beard"</p>
-        <h2 hidden>Our gallery</h2>
-        <ul>
-          <li>
-            <img src="./images/gallery/img-1.jpg" alt="gallery" width="270" height="360" />
+      <section class="gallery">
+        <p class="uppertitle">In Latin, "barba" means "beard"</p>
+        <h2 hidden="">Our gallery</h2>
+        <ul class="gallery-list list">
+          <li class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./images/gallery/img-1.jpg"
+              alt="gallery"
+              width="270"
+              height="360"
+            />
           </li>
-          <li>
-            <img src="./images/gallery/img-2.jpg" alt="gallery" width="270" height="360" />
+          <li class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./images/gallery/img-2.jpg"
+              alt="gallery"
+              width="270"
+              height="360"
+            />
           </li>
-          <li>
-            <img src="./images/gallery/img-3.jpg" alt="gallery" width="270" height="360" />
+          <li class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./images/gallery/img-3.jpg"
+              alt="gallery"
+              width="270"
+              height="360"
+            />
           </li>
-          <li>
-            <img src="./images/gallery/img-4.jpg" alt="gallery" width="270" height="360" />
+          <li class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./images/gallery/img-4.jpg"
+              alt="gallery"
+              width="270"
+              height="360"
+            />
           </li>
         </ul>
       </section>
       <!-- Booking section -->
-      <section>
-        <h2>Online-booking</h2>
+      <section class="booking">
+        <h2 class="title title-theme-dark">Online-booking</h2>
       </section>
       <!-- Contatcs section -->
-      <section id="contacts">
-        <h2>Contacts</h2>
-        <address>
-          <ul>
-            <li>
+      <section class="contacts" id="contacts">
+        <h2 class="title title-theme-dark">Contacts</h2>
+        <address class="contacts-block">
+          <ul class="contacts-list list">
+            <li class="contacts-item">
               <a
+                class="contacts-link link"
                 href="https://goo.gl/maps/DxwWN8cGu68zeSG99"
                 target="_blank"
                 rel="noopener noreferrer"
                 >st. Vasylkivska, 7A Kiev, 08132</a
               >
             </li>
-            <li>
-              <a href="tel:+380441111111">+38 044 111 11 11</a>
+            <li class="contacts-item">
+              <a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a>
             </li>
-            <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+            <li class="contacts-item">
+              <a class="contacts-link link" href="mailto:barbershop@email.com"
+                >barbershop@email.com</a
+              >
             </li>
           </ul>
         </address>
 
-        <p>Working hours</p>
-        <p>
+        <p class="schedule-uppertitle">Working hours</p>
+        <p class="schedule-desc">
           Every day from <time datetime="09:00">9:00</time> to <time datetime="22:00">22:00</time>
         </p>
       </section>
     </main>
     <!-- Footer section -->
-    <footer>
-      <p>&#169; Copyright 2020</p>
-
-      <ul>
-        <li>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <footer class="footer">
+      <p class="footer-copyright">&#169; Copyright 2020</p>
+      <ul class="media list">
+        <li class="media-item">
+          <a
+            class="media-link link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
         </li>
-        <li>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a>
+        <li class="media-item">
+          <a
+            class="media-link link"
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Youtube
+          </a>
         </li>
       </ul>
     </footer>
