@@ -16,6 +16,7 @@
   --accent-bg-cl: #ff6c00;
 
   /* Others */
+  --radius: 25px;
 }
 
 /**
@@ -31,15 +32,44 @@ body {
   color: var(--primary-txt-cl);
 }
 /* reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
 .link {
   text-decoration: none;
   color: currentColor;
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* reset end */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 .uppertitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -49,6 +79,8 @@ body {
   color: var(--grey-cl-60);
 }
 .title {
+  margin-bottom: 20px;
+
   font-family: var(--secondary-font);
   font-size: 42px;
   line-height: calc(49 / 42);
@@ -58,12 +90,18 @@ body {
   color: var(--light-txt-cl);
 }
 .subtitle {
+  margin-bottom: 20px;
+
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: var(--secondary-txt-cl);
 }
 .btn {
+  min-width: 160px;
+  min-height: 40px;
+  padding: 11px 19px;
+
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -73,6 +111,8 @@ body {
   color: var(--primary-txt-cl);
 
   background-color: transparent;
+  border: 1px solid var(--accent-bg-cl);
+  border-radius: var(--radius);
   cursor: pointer;
 }
 .btn:hover,
@@ -139,12 +179,15 @@ body {
   color: var(--accent-txt-cl);
 }
 .hero-title {
+  margin-bottom: 20px;
+
   font-size: 72px;
   line-height: calc(85 / 72);
   letter-spacing: 0.05em;
   color: var(--light-txt-cl);
 }
 .hero-desc {
+  width: 360px;
   color: #9da4bd;
 }
 /* slider */
@@ -165,6 +208,9 @@ body {
 */
 .about {
 }
+.about-right-side {
+  width: 470px;
+}
 .about-list {
 }
 .about-item {
@@ -172,6 +218,8 @@ body {
 .about-img {
 }
 .about-desc {
+  margin-bottom: 42px;
+
   font-size: 14px;
   line-height: calc(26 / 14);
   color: var(--secondary-txt-cl);
@@ -234,6 +282,13 @@ body {
 .team-list {
 }
 .team-item {
+  width: 370px;
+  margin-bottom: 30px;
+}
+.team-wrapper {
+  padding: 30px;
+  border: 1px solid red;
+  border-top: none;
 }
 .team-avatar {
 }
