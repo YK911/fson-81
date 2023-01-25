@@ -16,112 +16,123 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalize -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom styles -->
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header section -->
     <header class="header">
-      <a class="header-logo link" href="./index.html">
-        <img
-          class="header-logo-img"
-          src="./images/header/logo.svg"
-          alt="BarberShop logo"
-          width="70"
-          height="56"
-        />
-      </a>
-
-      <nav class="header-nav">
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-link link current" id="link" href="#about">About</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#price">Services and prices</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#team">Barbers</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#contacts">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-
-      <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
-      <button class="header-button btn btn-theme-dark" type="button">Online-booking</button>
+      <div class="container">
+        <a class="header-logo link" href="./index.html">
+          <img
+            class="header-logo-img"
+            src="./images/header/logo.svg"
+            alt="BarberShop logo"
+            width="70"
+            height="56"
+          />
+        </a>
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link current" id="link" href="#about">About</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="#price">Services and prices</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="#team">Barbers</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="header-button btn btn-theme-dark" type="button">Online-booking</button>
+      </div>
     </header>
     <main>
       <!-- Hero section -->
       <section class="hero section">
-        <ul class="media list">
-          <li class="media-item">
-            <a
-              class="media-link link"
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
-          </li>
-          <li class="media-item">
-            <a
-              class="media-link link"
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Youtube
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="media list">
+            <li class="media-item">
+              <a
+                class="media-link link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="media-item">
+              <a
+                class="media-link link"
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Youtube
+              </a>
+            </li>
+          </ul>
 
-        <p class="uppertitle">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-desc">
-          We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
-        </p>
+          <p class="uppertitle">A hair salon for men in Kyiv</p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-desc">
+            We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+          </p>
 
-        <!-- slider pagination -->
-        <ul class="slider-pagination list" hidden>
-          <li class="slider-pagination-item"></li>
-          <li class="slider-pagination-item"></li>
-          <li class="slider-pagination-item"></li>
-        </ul>
-        <!-- slider controls -->
-        <ul class="slider-controls list" hidden>
-          <li class="slider-controls-item">
-            <button class="slider-controls-btn" type="button">Back</button>
-          </li>
-          <li class="slider-controls-item">
-            <button class="slider-controls-btn" type="button">Forward</button>
-          </li>
-        </ul>
+          <!-- slider pagination -->
+          <ul class="slider-pagination list" hidden>
+            <li class="slider-pagination-item"></li>
+            <li class="slider-pagination-item"></li>
+            <li class="slider-pagination-item"></li>
+          </ul>
+          <!-- slider controls -->
+          <ul class="slider-controls list" hidden>
+            <li class="slider-controls-item">
+              <button class="slider-controls-btn" type="button">Back</button>
+            </li>
+            <li class="slider-controls-item">
+              <button class="slider-controls-btn" type="button">Forward</button>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- About us section -->
       <section class="about" id="about">
-        <ul class="about-list list">
-          <li class="about-item">
-            <img class="about-img" src="./images/about/img-1.jpg" alt width="270" height="445" />
-          </li>
-          <li class="about-item">
-            <img class="about-img" src="./images/about/img-2.jpg" alt width="270" height="445" />
-          </li>
-        </ul>
-        <p class="uppertitle">About</p>
-        <h2 class="title">Best Barbershop in your city</h2>
-        <p class="subtitle"
-          >If you want to add more confidence to your image, you should visit us.</p
-        >
-        <p class="about-desc">
-          We are a team that never stops at what has been achieved and are thirsty for changes. And
-          when you fall into the hands of our master, you will never be the same again. We are a
-          team that is always "on the same wave" with clients. Therefore, we are always ready to
-          improve everyone who comes to us!
-        </p>
-        <button class="btn" type="button">ONLINE-BOOKING</button>
+        <div class="container">
+          <ul class="about-list list">
+            <li class="about-item">
+              <img class="about-img" src="./images/about/img-1.jpg" alt width="270" height="445" />
+            </li>
+            <li class="about-item">
+              <img class="about-img" src="./images/about/img-2.jpg" alt width="270" height="445" />
+            </li>
+          </ul>
+          <div class="about-right-side">
+            <p class="uppertitle">About</p>
+            <h2 class="title">Best Barbershop in your city</h2>
+            <p class="subtitle"
+              >If you want to add more confidence to your image, you should visit us.</p
+            >
+            <p class="about-desc">
+              We are a team that never stops at what has been achieved and are thirsty for changes.
+              And when you fall into the hands of our master, you will never be the same again. We
+              are a team that is always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button class="btn" type="button">ONLINE-BOOKING</button>
+          </div>
+        </div>
       </section>
       <!-- Price section -->
       <section class="price" id="price">
@@ -193,44 +204,46 @@
               width="370"
               height="346"
             />
-            <p class="team-name">John Smith</p>
-            <p class="team-position">Extreme Barber</p>
-            <ul class="socials list">
-              <li class="socials-item">
-                <a class="socials-link" href aria-label="Instagram link">
-                  <img class="socials-icon" src="./images/icons/instagram.svg" alt="icon" ""
-                  width="20" height="20">
-                </a>
-              </li>
-              <li class="socials-item">
-                <a class="socials-link" href aria-label="Twitter link">
-                  <img class="socials-icon" src="./images/icons/twitter.svg" alt="icon" ""
-                  width="20" height="20">
-                </a>
-              </li>
-              <li class="socials-item">
-                <a class="socials-link" href aria-label="Facebook link">
-                  <img
-                    class="socials-icon"
-                    src="./images/icons/facebook.svg"
-                    alt="icon"
-                    width="20"
-                    height="20"
-                  />
-                </a>
-              </li>
-              <li class="socials-item">
-                <a class="socials-link" href aria-label="Linkedin link">
-                  <img
-                    class="socials-icon"
-                    src="./images/icons/linkedin.svg"
-                    alt="icon"
-                    width="20"
-                    height="20"
-                  />
-                </a>
-              </li>
-            </ul>
+            <div class="team-wrapper">
+              <p class="team-name">John Smith</p>
+              <p class="team-position">Extreme Barber</p>
+              <ul class="socials list">
+                <li class="socials-item">
+                  <a class="socials-link" href aria-label="Instagram link">
+                    <img class="socials-icon" src="./images/icons/instagram.svg" alt="icon" ""
+                    width="20" height="20">
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a class="socials-link" href aria-label="Twitter link">
+                    <img class="socials-icon" src="./images/icons/twitter.svg" alt="icon" ""
+                    width="20" height="20">
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a class="socials-link" href aria-label="Facebook link">
+                    <img
+                      class="socials-icon"
+                      src="./images/icons/facebook.svg"
+                      alt="icon"
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a class="socials-link" href aria-label="Linkedin link">
+                    <img
+                      class="socials-icon"
+                      src="./images/icons/linkedin.svg"
+                      alt="icon"
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="team-item">
             <img
