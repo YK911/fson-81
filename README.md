@@ -1,6 +1,6 @@
 # FSon-81
 
-Заняття 3:
+Заняття 5:
 
 - Блокова модель елемента: content, padding, border, margin
 - Властивості width та height
