@@ -1,6 +1,6 @@
 # FSon-80
 
-Заняття 3:
+Заняття 4:
 
 - CSS змінні
 - Властивості оформелння тексту: `text-align`, `text-decoration`, `text-transform`, `text-indent`,
@@ -11,4 +11,5 @@
 
 ---
 
-💈 🪒 [Посилання на макет](https://www.figma.com/file/z6Rb84e4NKxe66QNokOWA8/Barbershop-EN?node-id=1374%3A32)
+💈 🪒
+[Посилання на макет](https://www.figma.com/file/z6Rb84e4NKxe66QNokOWA8/Barbershop-EN?node-id=1374%3A32)
