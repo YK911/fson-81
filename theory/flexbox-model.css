@@ -1,0 +1,109 @@
+body {
+  padding-top: 4vh;
+}
+
+.flexbox-container {
+  width: 1000px;
+  /* height: 400px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-bottom: 40px;
+
+  background-color: lightblue;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.flexbox-element {
+  width: 200px;
+  height: 150px;
+  /* margin: 10px; */
+
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  line-height: 150px;
+
+  background-color: lightgreen;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+/* .flexbox-element:first-child {
+  background-color: darkkhaki;
+}
+.flexbox-element:last-child {
+  background-color: darkorange;
+} */
+/* .flexbox-element:nth-child(-n + 5) {
+  background-color: tomato;
+} */
+/*  :nth-child(an + b) */
+/*  :nth-child(-n + 3) */
+/* .flexbox-element:not(:last-child) {
+  margin-bottom: 10px;
+} */
+
+/**
+  |============================
+  | Flexbox layout
+  |============================
+*/
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 100px 60px; */
+  row-gap: 150px;
+  column-gap: 60px;
+
+  /*
+  Default parameters
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  */
+}
+/* .flexbox-element {
+  margin-right: 60px;
+  margin-bottom: 40px;
+}
+.flexbox-element:nth-child(4n) {
+  margin-right: 0;
+} */
+/* .flexbox-element:nth-child(n + 4) {
+  margin-bottom: 0;
+} */
+/* .flexbox-element:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+} */
+
+/**
+  |============================
+  | Flexbox grid
+  |============================
+*/
+:root {
+  --items: 3;
+  --indent: 40px;
+}
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.flexbox-element {
+  width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+.items-4 {
+  --items: 4;
+}
+.items-5 {
+  --items: 5;
+  --indent: 10px;
+}
+.flexbox-element:nth-child(3) {
+  background-color: tomato;
+  order: -1;
+  align-self: center;
+}
