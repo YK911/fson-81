@@ -1,0 +1,28 @@
+body {
+  padding-top: 4vh;
+}
+
+.flexbox-container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+
+  background-color: lightblue;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.flexbox-element {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  line-height: 150px;
+
+  background-color: lightgreen;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
