@@ -27,7 +27,7 @@
   <body>
     <!-- Header section -->
     <header class="header">
-      <div class="container">
+      <div class="header-container container">
         <a class="header-logo link" href="./index.html">
           <img
             class="header-logo-img"
@@ -59,7 +59,7 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero section">
+      <section class="hero">
         <div class="container">
           <ul class="media list">
             <li class="media-item">
@@ -109,7 +109,7 @@
       </section>
       <!-- About us section -->
       <section class="about" id="about">
-        <div class="container">
+        <div class="about-container container">
           <ul class="about-list list">
             <li class="about-item">
               <img class="about-img" src="./images/about/img-1.jpg" alt width="270" height="445" />
@@ -141,33 +141,35 @@
           <h2 class="title title-theme-dark">Services and prices</h2>
           <div class="price-wrapper">
             <ul class="price-list list">
-              <li class="price-item"
-                >Men’s haircut <span class="price-line"></span> from 300 uah.</li
-              >
-              <li class="price-item">Beard trim <span class="price-line"></span> from 300 uah.</li>
-              <li class="price-item"
-                >Mustache trim <span class="price-line"></span> from 200 uah.</li
-              >
-              <li class="price-item"
-                >Straight razor <span class="price-line"></span> shave from 200 uah.</li
-              >
+              <li class="price-item">
+                Men’s haircut <span class="price-line"></span> from 300 uah.
+              </li>
+              <li class="price-item">
+                Beard trim <span class="price-line"></span> from 300 uah.
+              </li>
+              <li class="price-item">
+                Mustache trim <span class="price-line"></span> from 200 uah.
+              </li>
+              <li class="price-item">
+                Straight razor <span class="price-line"></span> shave from 200 uah.
+              </li>
             </ul>
             <ul class="price-list list">
-              <li class="price-item"
-                >Trainee’s haircut <span class="price-line"></span> from 50 uah.</li
-              >
-              <li class="price-item"
-                >Haircut under the nozzle <span class="price-line"></span> from 200 uah.</li
-              >
-              <li class="price-item"
-                >Children’s haircut (0-12 y.o.) <span class="price-line"></span> from 300 uah.</li
-              >
-              <li class="price-item"
-                >Camouflage of gray hair <span class="price-line"></span> from 200 uah.</li
-              >
+              <li class="price-item">
+                Trainee’s haircut <span class="price-line"></span> from 50 uah
+              </li>
+              <li class="price-item">
+                Haircut under the nozzle <span class="price-line"></span> from 200 uah.
+              </li>
+              <li class="price-item">
+                Children’s haircut (0-12 y.o.) <span class="price-line"></span> from 300 uah.
+              </li>
+              <li class="price-item">
+                Camouflage of gray hair <span class="price-line"></span> from 200 uah.
+              </li>
             </ul>
           </div>
-          <button class="btn btn-theme-dark" type="button">online-booking</button>
+          <button class="price-btn btn btn-theme-dark" type="button">online-booking</button>
         </div>
       </section>
       <!-- Benefits section -->
@@ -204,8 +206,8 @@
         <div class="container">
           <p class="uppertitle">For true enjoyers of the atmosphere</p>
           <h2 class="title">Our barbers</h2>
-          <ul class="team-list list">
-            <li class="team-item">
+          <ul class="team-list card-set list">
+            <li class="team-item card-set-item">
               <img
                 class="team-avatar"
                 src="./images/team/img-1.jpg"
@@ -254,7 +256,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item card-set-item">
               <img
                 class="team-avatar"
                 src="./images/team/img-2.jpg"
@@ -301,7 +303,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item">
+            <li class="team-item card-set-item">
               <img
                 class="team-avatar"
                 src="./images/team/img-3.jpg"
@@ -356,8 +358,8 @@
         <div class="container">
           <p class="uppertitle">In Latin, "barba" means "beard"</p>
           <h2 hidden="">Our gallery</h2>
-          <ul class="gallery-list list">
-            <li class="gallery-item">
+          <ul class="gallery-list card-set list">
+            <li class="gallery-item card-set-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/img-1.jpg"
@@ -366,7 +368,7 @@
                 height="360"
               />
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item card-set-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/img-2.jpg"
@@ -375,7 +377,7 @@
                 height="360"
               />
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item card-set-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/img-3.jpg"
@@ -384,7 +386,43 @@
                 height="360"
               />
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item card-set-item">
+              <img
+                class="gallery-img"
+                src="./images/gallery/img-4.jpg"
+                alt="gallery"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item card-set-item">
+              <img
+                class="gallery-img"
+                src="./images/gallery/img-1.jpg"
+                alt="gallery"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item card-set-item">
+              <img
+                class="gallery-img"
+                src="./images/gallery/img-2.jpg"
+                alt="gallery"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item card-set-item">
+              <img
+                class="gallery-img"
+                src="./images/gallery/img-3.jpg"
+                alt="gallery"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item card-set-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/img-4.jpg"

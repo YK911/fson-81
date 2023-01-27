@@ -2,7 +2,7 @@
 
 Заняття 6:
 
-- Структурні псевдокласи: first/last-сhild, nth-child/nth-last-child
+- Структурні псевдокласи: `first/last-сhild`, `nth-child/nth-last-child`
 - Поняття `flex-контейнер` та `flex-елемент`
 - Властивість display: `flex || inline-flex`
 - Flex-вісі та властивість `flex-direction`
