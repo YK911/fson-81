@@ -14,7 +14,9 @@
 
   /* BG colors */
   --primary-bg-cl: #111319;
+  --secondary-bg-cl: #303030;
   --accent-bg-cl: #ff6c00;
+  --light-bg-cl: #f7f7f7;
 
   /* Others */
   --radius: 25px;
@@ -79,20 +81,34 @@ button {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
+  /*
   outline: 2px solid red;
-  outline-offset: -2px;
+  outline-offset: -2px; */
 }
 .uppertitle {
   margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
   text-transform: uppercase;
 }
+.uppertitle::before {
+  content: '';
+
+  width: 60px;
+  height: 1px;
+  background-color: var(--secondary-bg-cl);
+}
 .uppertitle-theme-dark {
   color: var(--grey-cl-60);
+}
+.uppertitle-theme-dark::before {
+  background-color: var(--grey-cl-60);
 }
 .title {
   margin-bottom: 20px;
@@ -181,8 +197,23 @@ button {
 }
 .header-item {
 }
+
+.header-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+
+  background-color: var(--accent-bg-cl);
+}
+
 .header-link,
 .header-contact {
+  position: relative;
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -284,7 +315,15 @@ button {
   |============================
 */
 .price {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: var(--primary-bg-cl);
+  background-image: linear-gradient(rgb(255 0 0 / 10%), rgb(255 0 0 / 10%)),
+    url(../images/price/bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .price-wrapper {
   display: flex;
@@ -297,12 +336,10 @@ button {
   padding: 30px 20px;
 }
 .price-list:first-child {
-  outline: 2px solid blueviolet;
-  outline-offset: -2px;
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 .price-list:last-child {
-  outline: 2px solid hotpink;
-  outline-offset: -2px;
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 .price-item {
   display: flex;
@@ -335,6 +372,15 @@ button {
 .benefits-list {
 }
 .benefits-item {
+  margin-bottom: 30px;
+
+  width: 170px;
+  min-height: 133px;
+
+  padding: 20px 24px;
+  background-color: var(--light-bg-cl);
+
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .benefits-quentity {
   font-weight: 700;
@@ -362,6 +408,7 @@ button {
   |============================
 */
 .team {
+  background-color: var(--light-bg-cl);
 }
 .team-list {
 }
@@ -412,8 +459,23 @@ button {
   | Booking styles
   |============================
 */
-.booking {
+.wrapper {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: var(--primary-bg-cl);
+  background-image: url(../images/contacts/bg-img.png);
+  background-repeat: no-repeat;
+  background-position: top 50% left calc(50% + 408px);
+}
+.wrapper-container {
+  display: flex;
+  gap: 30px;
+}
+
+.booking {
+  width: 570px;
 }
 /**
   |============================
@@ -421,19 +483,24 @@ button {
   |============================
 */
 .contacts {
-  background-color: var(--primary-bg-cl);
+  width: 570px;
+  padding-left: 100px;
 }
 .contacts-block {
+  margin-bottom: 72px;
   font-style: normal;
 }
 .contacts-list {
 }
-.contacts-item {
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .contacts-link {
   color: var(--grey-cl);
 }
 .schedule-uppertitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -449,6 +516,8 @@ button {
   |============================
 */
 .footer {
+  padding-top: 52px;
+  padding-bottom: 52px;
 }
 .footer-copyright {
   font-weight: 600;
