@@ -218,7 +218,7 @@
               <div class="team-wrapper">
                 <p class="team-name">John Smith</p>
                 <p class="team-position">Extreme Barber</p>
-                <ul class="socials list">
+                <ul class="socials list" hidden>
                   <li class="socials-item">
                     <a class="socials-link" href aria-label="Instagram link">
                       <img class="socials-icon" src="./images/icons/instagram.svg" alt="icon" ""
@@ -266,7 +266,7 @@
               />
               <p class="team-name">Michele Doe</p>
               <p class="team-position">Extreme Barber</p>
-              <ul class="socials list">
+              <ul class="socials list" hidden>
                 <li class="socials-item">
                   <a class="socials-link" href aria-label="Instagram link">
                     <img class="socials-icon" src="./images/icons/instagram.svg" alt="icon" ""
@@ -313,7 +313,7 @@
               />
               <p class="team-name">Alan Black</p>
               <p class="team-position">Extreme Barber</p>
-              <ul class="socials list">
+              <ul class="socials list" hidden>
                 <li class="socials-item">
                   <a class="socials-link" href aria-label="Instagram link">
                     <img class="socials-icon" src="./images/icons/instagram.svg" alt="icon" ""
@@ -395,79 +395,47 @@
                 height="360"
               />
             </li>
-            <li class="gallery-item card-set-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery/img-1.jpg"
-                alt="gallery"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item card-set-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery/img-2.jpg"
-                alt="gallery"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item card-set-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery/img-3.jpg"
-                alt="gallery"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item card-set-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery/img-4.jpg"
-                alt="gallery"
-                width="270"
-                height="360"
-              />
-            </li>
           </ul>
         </div>
       </section>
-      <!-- Booking section -->
-      <section class="booking">
-        <h2 class="title title-theme-dark">Online-booking</h2>
-      </section>
-      <!-- Contatcs section -->
-      <section class="contacts" id="contacts">
-        <h2 class="title title-theme-dark">Contacts</h2>
-        <address class="contacts-block">
-          <ul class="contacts-list list">
-            <li class="contacts-item">
-              <a
-                class="contacts-link link"
-                href="https://goo.gl/maps/DxwWN8cGu68zeSG99"
-                target="_blank"
-                rel="noopener noreferrer"
-                >st. Vasylkivska, 7A Kiev, 08132</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link link" href="mailto:barbershop@email.com"
-                >barbershop@email.com</a
-              >
-            </li>
-          </ul>
-        </address>
-
-        <p class="schedule-uppertitle">Working hours</p>
-        <p class="schedule-desc">
-          Every day from <time datetime="09:00">9:00</time> to <time datetime="22:00">22:00</time>
-        </p>
-      </section>
+      <div class="wrapper">
+        <div class="wrapper-container container">
+          <!-- Booking section -->
+          <section class="booking">
+            <h2 class="title title-theme-dark">Online-booking</h2>
+          </section>
+          <!-- Contatcs section -->
+          <section class="contacts" id="contacts">
+            <h2 class="title title-theme-dark">Contacts</h2>
+            <address class="contacts-block">
+              <ul class="contacts-list list">
+                <li class="contacts-item">
+                  <a
+                    class="contacts-link link"
+                    href="https://goo.gl/maps/DxwWN8cGu68zeSG99"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >st. Vasylkivska, 7A Kiev, 08132</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link link" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="schedule-uppertitle">Working hours</p>
+            <p class="schedule-desc">
+              Every day from <time datetime="09:00">9:00</time> to
+              <time datetime="22:00">22:00</time>
+            </p>
+          </section>
+        </div>
+      </div>
     </main>
     <!-- Footer section -->
     <footer class="footer">
