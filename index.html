@@ -53,10 +53,12 @@
             </li>
           </ul>
         </nav>
-        <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="header-button btn btn-theme-dark" type="button" data-modal-open
-          >Online-booking</button
-        >
+        <div class="header-wrapper">
+          <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="header-button btn btn-theme-dark" type="button" data-modal-open>
+            Online-booking
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -416,6 +418,23 @@
           <!-- Booking section -->
           <section class="booking">
             <h2 class="title title-theme-dark">Online-booking</h2>
+            <form class="booking-form" name="booking_form" autocomplete="off">
+              <div class="booking-wrapper">
+                <label class="booking-field">
+                  <input class="booking-input" type="text" name="user_name" />
+                  <span class="booking-badge">Name*</span>
+                </label>
+                <label class="booking-field">
+                  <input class="booking-input" type="tel" name="user_phone" />
+                  <span class="booking-badge">Phone*</span>
+                </label>
+              </div>
+              <label class="booking-field">
+                <textarea name="user_message" rows="6"></textarea>
+                <span class="booking-badge">Message</span>
+              </label>
+              <button class="booking-btn btn btn-theme-dark" type="submit">Send</button>
+            </form>
           </section>
           <!-- Contatcs section -->
           <section class="contacts" id="contacts">
@@ -500,6 +519,57 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <strong class="modal-title">Leave your contacts and we will call you back</strong>
+        <form class="modal-form" name="modal_form">
+          <!-- Name field -->
+          <label class="modal-form-label" for="user_sign">Name</label>
+          <div class="modal-form-group">
+            <input class="modal-form-field" type="text" id="user_sign" />
+            <svg class="modal-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <!-- Phone field -->
+          <label class="modal-form-label" for="user_telephone">Phone</label>
+          <div class="modal-form-group">
+            <input class="modal-form-field" type="tel" id="user_telephone" />
+            <svg class="modal-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <!-- Email field -->
+          <label class="modal-form-label" for="user_email">Email</label>
+          <div class="modal-form-group">
+            <input class="modal-form-field" type="text" id="user_email" />
+            <svg class="modal-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <!-- Comment field -->
+          <label class="modal-form-label" for="user_comment">Comment</label>
+          <textarea
+            class="modal-form-comment"
+            name="user_comment"
+            id="user_comment"
+            rows="6"
+            placeholder="Type your comment..."
+          ></textarea>
+          <!-- Agreement field -->
+          <label class="modal-form-agreement" for="user_agreement">
+            <input
+              class="modal-form-checkbox"
+              type="checkbox"
+              name="user_agreement"
+              id="user_agreement"
+            />
+            <span class="modal-form-desc">
+              I accept the terms and conditions of the
+              <a class="modal-form-link" href="" target="_blank">Privacy Policy</a>
+            </span>
+          </label>
+
+          <button class="modal-form-btn btn" type="submit">Submit</button>
+        </form>
       </div>
     </div>
 
