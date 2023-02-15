@@ -199,11 +199,12 @@ button {
   transition-timing-function: ease-in;
   transition-delay: 1s; */
 
-  transition: background-color var(--trns-fast);
+  transition: background-color var(--trns-fast), color var(--trns-fast);
 }
 /* Active conditions */
 .btn:hover,
 .btn:focus {
+  color: var(--light-txt-cl);
   background-color: var(--accent-bg-cl);
 }
 .btn-theme-dark {
@@ -283,7 +284,9 @@ button {
 .header-contact:focus {
   color: var(--accent-txt-cl);
 }
-
+.header-link.current {
+  color: var(--accent-txt-cl);
+}
 .header-link.current::after {
   content: '';
   position: absolute;
@@ -299,7 +302,11 @@ button {
 .header-contact {
   margin-right: 40px;
 }
-
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
 /**
   |============================
   | Hero styles
@@ -333,6 +340,7 @@ button {
   background-color: var(--secondary-bg-cl);
 }
 .media-link {
+  display: block;
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -707,6 +715,7 @@ button {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer-copyright {
   font-weight: 600;
@@ -775,4 +784,12 @@ button {
 }
 .modal-icon {
   fill: var(--light-bg-cl);
+}
+
+.booking-form {
+  color: #ffffff;
+}
+
+label {
+  display: block;
 }
