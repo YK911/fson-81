@@ -108,7 +108,21 @@ button {
   margin: 0;
   padding: 0;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* reset end */
+
 .about,
 .price,
 .benefits,
@@ -753,8 +767,10 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 450px;
+  width: 520px;
   min-height: 550px;
+  padding: 50px 40px;
+
   background-color: #fff;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -785,11 +801,142 @@ button {
 .modal-icon {
   fill: var(--light-bg-cl);
 }
+.modal-title {
+  display: block;
+  margin-bottom: 15px;
+  text-align: center;
+}
+/* modal form styles */
+.modal-form-label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.modal-form-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal-form-field {
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
 
-.booking-form {
-  color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid var(--primary-bg-cl);
+  outline: 2px solid transparent;
+  outline-offset: -1px;
+  transition: outline-color var(--trns-fast), box-shadow var(--trns-fast);
+}
+.modal-form-field:focus,
+.modal-form-field:focus-visible {
+  outline-color: var(--accent-bg-cl);
+  box-shadow: 0 0 0 6px rgba(255, 108, 0, 0.25);
+}
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+  transition: fill var(--trns-fast);
+}
+.modal-form-field:focus + .modal-form-icon {
+  fill: var(--accent-bg-cl);
+}
+.modal-form-comment {
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+
+  font-size: 13px;
+
+  border-radius: 6px;
+  border: 1px solid var(--primary-bg-cl);
+  outline: 2px solid transparent;
+  outline-offset: -1px;
+  transition: outline-color var(--trns-fast), box-shadow var(--trns-fast);
+  resize: none;
+}
+.modal-form-comment:focus,
+.modal-form-comment:focus-visible {
+  outline-color: var(--accent-bg-cl);
+  box-shadow: 0 0 0 6px rgba(255, 108, 0, 0.25);
+}
+.modal-form-comment::placeholder {
+  color: #9da4bd;
+}
+.modal-form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.modal-form-checkbox {
+  appearance: none;
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid var(--primary-bg-cl);
+  border-radius: 3px;
+  transition: background-color 400ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    border-color 400ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    background-size 400ms cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' %3E%3Cpath d='M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' fill='%23fff' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4px;
+}
+.modal-form-checkbox:checked {
+  background-color: var(--accent-bg-cl);
+  border-color: var(--accent-bg-cl);
+  background-size: 14px;
 }
 
-label {
+.custom-checkbox {
+}
+.custom-checkbox-frame {
+  fill: transparent;
+  stroke: #2e2f42;
+  transition: 400ms;
+}
+.modal-form-checkbox:checked + .custom-checkbox > .custom-checkbox-frame {
+  fill: var(--accent-bg-cl);
+  stroke: var(--accent-bg-cl);
+}
+.custom-checkbox-check {
+  fill: var(--light-bg-cl);
+  opacity: 0;
+  transform: rotate(0) scale(0.3);
+  transition: 400ms 200ms;
+  transform-origin: center;
+}
+.modal-form-checkbox:checked + .custom-checkbox > .custom-checkbox-check {
+  opacity: 1;
+  transform: rotate(360deg) scale(0.7);
+}
+.modal-form-desc {
+  font-size: 14px;
+  user-select: none;
+}
+.modal-form-link {
+  color: var(--accent-txt-cl);
+}
+.modal-form-btn {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-form-btn:disabled {
+  filter: grayscale(1);
+  background-color: transparent;
+  color: inherit;
+  cursor: not-allowed;
 }
