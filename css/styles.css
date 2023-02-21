@@ -10,6 +10,7 @@
   --light-txt-cl: #ffffff;
   --grey-cl: rgb(157, 164, 189);
   --grey-cl-20: rgba(157, 164, 189, 0.2);
+  --grey-cl-40: rgba(157, 164, 189, 0.4);
   --grey-cl-60: rgba(157, 164, 189, 0.6);
 
   /* BG colors */
@@ -265,6 +266,10 @@ button {
   margin-right: 130px;
 }
 .header-logo-img {
+  transition: fill var(--trns-fast);
+}
+.header.no-transparency .header-logo-img {
+  fill: var(--light-bg-cl);
 }
 .header-nav {
   margin-right: auto;
@@ -668,6 +673,144 @@ button {
 .booking {
   width: 570px;
 }
+.booking-form-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  margin-bottom: 44px;
+}
+.booking-form-field {
+  position: relative;
+  display: block;
+  width: 270px;
+}
+.booking-form-input {
+  width: 100%;
+  height: 24px;
+  padding-right: 22px;
+
+  font-size: 14px;
+  color: var(--light-txt-cl);
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--grey-cl-40);
+  outline: transparent;
+
+  transition: border-color var(--trns-fast);
+}
+.booking-form-input:focus,
+.booking-form-input:not(:placeholder-shown) {
+  border-color: var(--border-light-cl);
+}
+.booking-form-input:not(:placeholder-shown):invalid:required {
+  border-color: rgb(255, 187, 0);
+}
+.booking-form-input:not(:placeholder-shown):valid:required {
+  border-color: rgb(0, 164, 57);
+}
+.booking-form-input::placeholder {
+  transition: opacity var(--trns-fast);
+  opacity: 0;
+}
+.booking-form-input:focus::placeholder {
+  opacity: 1;
+}
+.booking-form-label {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  transform-origin: left center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--grey-cl-40);
+
+  transition: color var(--trns-fast), transform var(--trns-fast);
+}
+.booking-form-input:focus + .booking-form-label,
+.booking-form-input:not(:placeholder-shown) + .booking-form-label {
+  color: var(--light-txt-cl);
+  transform: translateY(-20px) scale(0.8);
+}
+.booking-form-massage {
+  position: relative;
+  display: block;
+  margin-bottom: 44px;
+}
+.booking-form-textarea {
+  display: block;
+  width: 100%;
+  height: 76px;
+
+  font-size: 14px;
+  color: var(--light-txt-cl);
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--grey-cl-40);
+  outline: transparent;
+
+  transition: border-color var(--trns-fast);
+  resize: none;
+}
+.booking-form-textarea:focus {
+  border-color: var(--border-light-cl);
+}
+.booking-form-massage .booking-form-label {
+  top: 0;
+}
+.booking-form-textarea:focus + .booking-form-label,
+.booking-form-textarea:not(:placeholder-shown) + .booking-form-label {
+  transform: translateY(-30px) scale(0.8);
+  color: var(--light-txt-cl);
+}
+.success-icon {
+  opacity: 0;
+  fill: rgb(0, 164, 57);
+  transition: opacity var(--trns-fast);
+}
+.info-icons {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+}
+.booking-form-input:not(:placeholder-shown):valid:required ~ .info-icons > .success-icon {
+  opacity: 1;
+}
+.warning-msg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(20px);
+
+  display: block;
+  width: 100%;
+  font-size: 10px;
+  color: rgb(255, 187, 0);
+  text-align: center;
+  opacity: 0;
+
+  transition: opacity var(--trns-fast);
+}
+.booking-form-input:not(:placeholder-shown):focus:invalid:required ~ .warning-msg {
+  opacity: 1;
+}
+.warning-icon {
+  opacity: 0;
+  fill: rgb(255, 187, 0);
+
+  transition: opacity var(--trns-fast);
+}
+.booking-form-input:not(:placeholder-shown):focus:invalid:required ~ .info-icons > .warning-icon {
+  opacity: 1;
+}
+
 /**
   |============================
   | Contacts styles

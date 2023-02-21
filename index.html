@@ -29,13 +29,9 @@
     <header class="header" data-header>
       <div class="header-container container">
         <a class="header-logo link" href="./index.html">
-          <img
-            class="header-logo-img"
-            src="./images/header/logo.svg"
-            alt="BarberShop logo"
-            width="70"
-            height="56"
-          />
+          <svg class="header-logo-img" width="70" height="56">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
         </a>
         <nav class="header-nav">
           <ul class="header-list list">
@@ -418,22 +414,47 @@
           <!-- Booking section -->
           <section class="booking">
             <h2 class="title title-theme-dark">Online-booking</h2>
-            <form class="booking-form" name="booking_form" autocomplete="off">
-              <div class="booking-wrapper">
-                <label class="booking-field">
-                  <input class="booking-input" type="text" name="user_name" />
-                  <span class="booking-badge">Name*</span>
+            <form class="booking-form" name="booking-form" autocomplete="off">
+              <div class="booking-form-group">
+                <label class="booking-form-field">
+                  <input
+                    class="booking-form-input"
+                    type="text"
+                    name="user-name"
+                    placeholder="Antony Black"
+                    minlength="3"
+                    required
+                  />
+                  <span class="booking-form-label">name*</span>
+                  <span class="warning-msg">Must include minimum 3 charecters</span>
+                  <svg class="info-icons" width="16" height="16">
+                    <use class="warning-icon" href="./images/icons.svg#icon-warning"></use>
+                    <use class="success-icon" href="./images/icons.svg#icon-success"></use>
+                  </svg>
                 </label>
-                <label class="booking-field">
-                  <input class="booking-input" type="tel" name="user_phone" />
-                  <span class="booking-badge">Phone*</span>
+                <label class="booking-form-field">
+                  <input
+                    class="booking-form-input"
+                    type="tel"
+                    name="user-phone"
+                    id="user-phone"
+                    minlength="19"
+                    placeholder=" "
+                    required
+                  />
+                  <span class="booking-form-label">phone*</span>
                 </label>
               </div>
-              <label class="booking-field">
-                <textarea name="user_message" rows="6"></textarea>
-                <span class="booking-badge">Message</span>
+              <label class="booking-form-massage">
+                <textarea
+                  class="booking-form-textarea"
+                  name="user-message"
+                  rows="5"
+                  placeholder="&nbsp;"
+                ></textarea>
+                <span class="booking-form-label">message</span>
               </label>
-              <button class="booking-btn btn btn-theme-dark" type="submit">Send</button>
+              <button class="btn btn-theme-dark" type="submit">send</button>
             </form>
           </section>
           <!-- Contatcs section -->
@@ -512,7 +533,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="20" height="20">
@@ -581,7 +602,11 @@
       </div>
     </div>
 
+    <!-- Add Input mask https://github.com/RobinHerbots/Inputmask -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/input-mask.js"></script>
   </body>
 </html>
