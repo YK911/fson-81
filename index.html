@@ -55,11 +55,21 @@
             Online-booking
           </button>
         </div>
+        <button
+          class="header-menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="hero-container container">
           <div class="hero-left-side">
             <ul class="hero-media media list">
@@ -95,13 +105,12 @@
               We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
             </p>
 
-            <!-- slider pagination -->
             <ul class="slider-pagination list" hidden>
               <li class="slider-pagination-item"></li>
               <li class="slider-pagination-item"></li>
               <li class="slider-pagination-item"></li>
             </ul>
-            <!-- slider controls -->
+
             <ul class="slider-controls list" hidden>
               <li class="slider-controls-item">
                 <button class="slider-controls-btn" type="button">Back</button>
@@ -112,9 +121,9 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- About us section -->
-      <section class="about" id="about">
+      <!-- <section class="about" id="about">
         <div class="about-container container">
           <ul class="about-list list">
             <li class="about-item">
@@ -139,9 +148,9 @@
             <button class="btn" type="button">ONLINE-BOOKING</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Price section -->
-      <section class="price" id="price">
+      <!-- <section class="price" id="price">
         <div class="container">
           <p class="uppertitle uppertitle-theme-dark">Spend your time with the best masters</p>
           <h2 class="title title-theme-dark">Services and prices</h2>
@@ -177,9 +186,9 @@
           </div>
           <button class="price-btn btn btn-theme-dark" type="button">online-booking</button>
         </div>
-      </section>
+      </section> -->
       <!-- Benefits section -->
-      <section class="benefits">
+      <!-- <section class="benefits">
         <div class="benefits-container container">
           <div class="benefits-left-side">
             <ul class="benefits-list list">
@@ -210,9 +219,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Team section -->
-      <section class="team" id="team">
+      <!-- <section class="team" id="team">
         <div class="container">
           <p class="uppertitle">For true enjoyers of the atmosphere</p>
           <h2 class="team-title title">Our barbers</h2>
@@ -363,7 +372,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Gallery section -->
       <section class="gallery">
         <div class="container">
@@ -412,7 +421,7 @@
       <div class="wrapper">
         <div class="wrapper-container container">
           <!-- Booking section -->
-          <section class="booking">
+          <!-- <section class="booking">
             <h2 class="title title-theme-dark">Online-booking</h2>
             <form class="booking-form" name="booking-form" autocomplete="off">
               <div class="booking-form-group">
@@ -456,9 +465,9 @@
               </label>
               <button class="btn btn-theme-dark" type="submit">send</button>
             </form>
-          </section>
+          </section> -->
           <!-- Contatcs section -->
-          <section class="contacts" id="contacts">
+          <!-- <section class="contacts" id="contacts">
             <h2 class="title title-theme-dark">Contacts</h2>
             <address class="contacts-block">
               <ul class="contacts-list list">
@@ -499,15 +508,14 @@
               Every day from <time datetime="09:00">9:00</time> to
               <time datetime="22:00">22:00</time>
             </p>
-          </section>
+          </section> -->
         </div>
       </div>
     </main>
     <!-- Footer section -->
     <footer class="footer">
       <div class="footer-container container">
-        <p class="footer-copyright">&#169; Copyright 2020</p>
-        <ul class="media list">
+        <ul class="footer-media media list">
           <li class="media-item">
             <a
               class="media-link link"
@@ -529,6 +537,7 @@
             </a>
           </li>
         </ul>
+        <p class="footer-copyright">&#169; Copyright 2020</p>
       </div>
     </footer>
 
@@ -602,11 +611,84 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li>
+          <a href="" class="link">About</a>
+        </li>
+        <li>
+          <a href="" class="link">Products</a>
+        </li>
+        <li>
+          <a href="" class="link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li>
+          <a href="" class="link">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a href="" class="link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials">
+        <li>
+          <a href="" class="link">
+            <svg class="mobile-socials-icon">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="link">
+            <svg class="mobile-socials-icon">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="link">
+            <svg class="mobile-socials-icon">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="link">
+            <svg class="mobile-socials-icon">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <!-- Add Input mask https://github.com/RobinHerbots/Inputmask -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/input-mask.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
